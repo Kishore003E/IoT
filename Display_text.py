@@ -5,7 +5,8 @@
 #define SCREEN_WIDTH 128             // OLED display width
 #define SCREEN_HEIGHT 64             // OLED display height
 #define OLED_RESET    -1             // Reset pin, set to -1 if not used
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+# Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 void setup() {
   // Start the serial communication
