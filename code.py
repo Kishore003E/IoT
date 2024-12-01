@@ -38,6 +38,7 @@ void loop() {
   // Example: Create an animation or display other data
 }
 """
+st.code(code, language="c++")
 
 st.title("Controlling an LED")
 
@@ -113,6 +114,7 @@ void loop() {
   // Nothing to do here
 }
 """
+st.code(code, language="c++")
 
 st.title("fire acci")
 
@@ -181,6 +183,8 @@ void sendAlert(int gasValue, float temperature) {
   delay(5000);
 }
 """
+st.code(code, language="c++")
+
 st.title("GPS")
 code = """#include <TinyGPS++.h>
 #include <SoftwareSerial.h>
@@ -217,6 +221,9 @@ void displayGPSData() {
     Serial.println("Waiting for GPS signal...");
   }
 }"""
+
+st.code(code, language="c++")
+
 st.title("Gyro in attiny 85")
 code = """#include <Wire.h>
 #include <SoftwareSerial.h>
@@ -254,6 +261,9 @@ void loop() {
   // Short delay
   delay(100);
 }"""
+
+st.code(code, language="c++")
+
 st.title("ultrasonic in raspberrypi")
 code ="""const int trigPin = 18; // GPIO18
 const int echoPin = 24; // GPIO24
@@ -285,6 +295,9 @@ void loop() {
 
   delay(1000); // 1-second delay
 }"""
+
+st.code(code, language="c++")
+
 st.title("Arduino")
 code ="""
 
