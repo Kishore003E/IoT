@@ -1,3 +1,8 @@
+import streamlit as st
+
+st.title("Display Text/Images using OLED")
+
+code = """
 #include <Wire.h>                    // For I2C communication
 #include <Adafruit_GFX.h>             // For basic graphics functions
 #include <Adafruit_SSD1306.h>         // For OLED display
@@ -5,8 +10,7 @@
 #define SCREEN_WIDTH 128             // OLED display width
 #define SCREEN_HEIGHT 64             // OLED display height
 #define OLED_RESET    -1             // Reset pin, set to -1 if not used
-
-# Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 void setup() {
   // Start the serial communication
@@ -33,3 +37,6 @@ void loop() {
   // You can add more display functionality here
   // Example: Create an animation or display other data
 }
+"""
+
+st.code(code, language="c++")
